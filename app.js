@@ -8,6 +8,9 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+const mongoose = require('mongoose')
+mongoose.set('strictQuery', false)
+const mongoDB = "mongodb+srv://KnlsAdmin:KnlsAdmin_001@cluster0.dpilarb.mongodb.net/knls?retryWrites=true&w=majority"
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
